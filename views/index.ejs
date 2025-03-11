@@ -1,26 +1,31 @@
 <%- include("partials/header") %>
 <main>
-    <div class="blog-container">
+    <div class="blogs-container">
         <% if (posts.length > 0) { %>
         <ul class="blog-list">
             <% posts.forEach(post => { %>
-            <li class="blog">
+            <div class="blog-div"> 
+              <li class="blog">
                 <h2 class="blog-title"><%= post.title %></h2>
-                <p class="class-content"><%= post.content %></p>
+                <p class="blog-content"><%= post.content %></p>
                 <div class="button-container">
                     <form action="/edit/<%= post.id %>" method="get">
-                        <input class="edit-button" type="submit" value="edit">
+                        <input class="edit-button" type="submit" value="Edit">
                     </form>
                     <form action="/delete" method="post">
                         <input type="hidden" name="id" value="<%= post.id %>">
                         <button class="delete-button">Delete</button>
                     </form> 
                 </div>
-            </li>
+            </li>  
+            </div>
             <% }) %>
         </ul>
         <% } else { %>
-            <p>No posts available! create one!</p>
+            <div class="no-text">
+                <p>No posts available! create one!</p>
+            </div>
+            
         <% } %>
     </div>
     
