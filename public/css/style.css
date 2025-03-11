@@ -1,0 +1,100 @@
+header {
+    color: #1b1818;
+    text-align: center;
+    padding: 0%;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 60px; /* 187.5% */
+    letter-spacing: -1.6px;
+    margin: 0%;
+}
+
+a:hover {
+    color: black;
+}
+
+a:visited {
+    color: black;
+    
+}
+
+a:active {
+    color: black;
+}
+
+.header {
+    padding: 10px 10px;
+    font-size: 1rem;
+    border: none;
+    background-color: white;
+}
+
+.right-align {
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+
+footer {
+    position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+main {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    align-items: center;
+ flex-direction: column;
+  padding-top: 2%;
+}
+
+body {
+    font-family: Inter;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default body margins */
+  }
+
+div.blog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+div.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+div.blog-container ul.blog-list {
+    list-style: none;
+}
+
+input.edit-button {
+    background-color:dodgerblue;
+    border: none;
+    border-radius: 5px;
+    color: aliceblue;
+    size: 10px;
+}
+
+button.delete-button {
+    background-color:rgb(210, 55, 55);
+    border: none;
+    border-radius: 5px;
+    color: aliceblue;
+    size: 10px;
+}
