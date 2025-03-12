@@ -71,7 +71,7 @@ html, body {
     font-family: Inter;
     display: flex;
     flex-direction: column;
-    height: 100vh; /* Full viewport height */
+    min-height: 100vh; /* Full viewport height */
     height: 100%;
     margin: 0; /* Remove default body margins */
     min-width: 400px;
@@ -79,6 +79,7 @@ html, body {
 
 div.blogs-container {
     display: flex;
+    flex: 1;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
