@@ -1,10 +1,10 @@
 <%- include("partials/header") %>
-<main>
+<main class="create-main">
     <h2>Create a New Post</h2>
-    <form action="/create" method="post">
-        <input type="text" name="title" placeholder="Enter the title" required>
-        <textarea name="content" placeholder="Enter the content" required></textarea>
-        <input type="submit" value="Post">
+    <form class="create-form" action="/create" method="post">
+        <input class="create-title" type="text" name="title" placeholder="Enter the title" required>
+        <textarea class="create-content" name="content" placeholder="Enter the content" required></textarea>
+        <input class="create-button" type="submit" value="Post">
     </form>
 </main>
 <%- include("partials/footer") %>
