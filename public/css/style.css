@@ -176,6 +176,7 @@ form.create-form input.create-title {
     padding: 9px 13px;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
     width: 500px;
+    min-width: 400px;
 }
 
 form.create-form textarea.create-content {
@@ -184,6 +185,7 @@ form.create-form textarea.create-content {
     padding: 9px 13px;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
     width: 500px;
+    min-width: 400px;
     height: 200px;
 }
 
