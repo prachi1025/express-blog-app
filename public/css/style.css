@@ -168,6 +168,7 @@ form.create-form {
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
+    width: 100%;
 }
 
 form.create-form input.create-title {
