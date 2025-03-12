@@ -17,3 +17,15 @@ A simple blogging application built using **Node.js, Express, and EJS**, allowin
 - **CSS** – Styling and responsiveness.
 
 ## User Interface
+
+![UI](./public/screenshots/1.png)
+
+![UI](./public/screenshots/2.png)
+
+![UI](./public/screenshots/3.png)
+
+![UI](./public/screenshots/4.png)
+
+![UI](./public/screenshots/5.png)
+
+## Deployed At [Blog App](https://express-blog-app-xmgq.onrender.com/)
