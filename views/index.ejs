@@ -8,6 +8,11 @@
               <li class="blog">
                 <h2 class="blog-title"><%= post.title %></h2>
                 <p class="blog-content"><%= post.content %></p>
+
+                <!-- Display timestamps -->
+                <p class="blog-timestamp">Created on: <%= new Date(post.createdAt).toLocaleString() %></p>
+                <p class="blog-timestamp">Last updated: <%= new Date(post.updatedAt).toLocaleString() %></p>
+
                 <div class="button-container">
                     <form action="/edit/<%= post.id %>" method="get">
                         <input class="edit-button" type="submit" value="Edit">

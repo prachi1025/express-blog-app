@@ -13,7 +13,11 @@ router.get("/create", (req, res) => {
 
 router.post("/create", (req, res) => {
     const {title, content} = req.body;
-    posts.push({id: Date.now(), title, content});
+    posts.push({id: Date.now(), 
+        title, 
+        content,
+        createdAt: new Date().toISOString(), // Store creation date
+        updatedAt: new Date().toISOString() });
     res.redirect("/");
     console.log(req.body);
 })
@@ -25,10 +29,14 @@ router.get("/edit/:id", (req, res) => {
 });
 
 router.post("/edit", (req, res) => {
-    const {id, title, content} = req.body;
+    const {id, title, content, createdAt} = req.body;
     const postIndex = posts.findIndex(p => p.id == id);
     if (postIndex !== -1) {
-        posts[postIndex] = {id: Number(id), title, content};
+        posts[postIndex] = {id: Number(id), 
+            title, 
+            content,
+            createdAt: createdAt,
+            updatedAt: new Date().toISOString()};
     }
     res.redirect("/");
     console.log(req.body);

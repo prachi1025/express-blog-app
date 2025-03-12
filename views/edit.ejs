@@ -5,6 +5,7 @@
     <input class="create-form" type="hidden" name="id" value="<%= post.id %>">
     <input class="create-title" type="text" name="title" value="<%= post.title %>" required>
     <textarea class="create-content" name="content" required><%= post.content %></textarea>
+    <input type="hidden" name="createdAt" value="<%= post.createdAt %>">
     <button class="create-button">Save</button>
   </form>
 </main>

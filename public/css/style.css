@@ -203,3 +203,10 @@ form.create-form button.create-button {
     size: 10px;
     width: 50px;
 }
+
+.blog-timestamp {
+    font-size: 12px;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.611);
+    margin-bottom: 5px;
+}
