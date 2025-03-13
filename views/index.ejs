@@ -11,14 +11,14 @@
 
                 <!-- Display timestamps -->
                 <p class="blog-timestamp">Created on: <%= new Date(post.createdAt).toLocaleString() %></p>
-                <p class="blog-timestamp">Last updated: <%= new Date(post.updatedAt).toLocaleString() %></p>
+                <p class="blog-timestamp">Last updated: <%= new Date(post.lastUpdatedAt || post.createdAt).toLocaleString() %></p>
 
                 <div class="button-container">
-                    <form action="/edit/<%= post.id %>" method="get">
+                    <form action="/edit/<%= post._id %>" method="get">
                         <input class="edit-button" type="submit" value="Edit">
                     </form>
                     <form action="/delete" method="post">
-                        <input type="hidden" name="id" value="<%= post.id %>">
+                        <input type="hidden" name="id" value="<%= post._id %>">
                         <button class="delete-button">Delete</button>
                     </form> 
                 </div>
@@ -28,11 +28,9 @@
         </ul>
         <% } else { %>
             <div class="no-text">
-                <p>No posts available! create one!</p>
+                <p>No posts available! Create one!</p>
             </div>
-            
         <% } %>
     </div>
-    
 </main>
 <%- include("partials/footer") %>
